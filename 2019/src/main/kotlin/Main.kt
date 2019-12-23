@@ -15,6 +15,12 @@ fun main(args: Array<String>) {
             val part2 = Day2().solvePart2()
             println("Part 2: $part2")
         }
+        "--day=3" -> {
+            val part1 = Day3().solvePart1().first
+            println("Part 1: $part1")
+            val part2 = Day3().solvePart2()
+            println("Part 2: $part2")
+        }
         else -> throw IllegalArgumentException("Unexpected argument provided")
     }
 

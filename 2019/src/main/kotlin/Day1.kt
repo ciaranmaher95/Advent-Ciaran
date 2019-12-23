@@ -31,8 +31,7 @@ class Day1 {
     private fun resourceInput(): List<Int> {
         return this::class.java
             .getResource("day1ciaran.txt")
-            .readText()
-            .split("\n")
+            .readText().lines()
             .filter { it.isNotBlank() }
             .map { it.toInt() }
 
